@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Condition Information</title>
+</head>
+<body>
+    <body>
+        <div class="title">AccelHealth</div>
+    
+        <h2>Result</h2>
+
+        
+  <div  class="ot" id="output" style="padding: 5%;"></div>
+  <div style="background-color: rgba(128, 128, 128, 0.5);" class="container">
+    <h2>Patient Details</h2>
+    <div id="result"></div>
+</div>
+
+  
+
+<footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2024 AccelHealth. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+      // Retrieve form data from URL parameters
+      var urlParams = new URLSearchParams(window.location.search);
+    var name = urlParams.get('name');
+    var patient_id = urlParams.get('id');
+
+    
+    // Display form data on the result page
+    var resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = "<p>Patient Name: " + name + "</p>";
+    resultDiv.innerHTML += "<p>PatientID: " + patient_id + "</p>";
+    // Parse the query parameter to get the condition number
+    var params = new URLSearchParams(window.location.search);
+    var conditionNumber = params.get("condition");
+
+    var outputDiv = document.getElementById("output");
+
+
+    switch(conditionNumber) {
+  case "1":
+    outputDiv.innerHTML = "<h2>Muscular Dystrophy</h2><p></p>";
+    outputDiv.classList.add("muscular-dystrophy");
+    break;
+  case "2":
+    outputDiv.innerHTML = "<h2>Control Object</h2>";
+    outputDiv.classList.add("control-object");
+    break;
+  case "3":
+    outputDiv.innerHTML = "<h2>Osteoarthritis</h2>";
+    outputDiv.classList.add("osteoarthritis");
+    break;
+  case "4":
+    outputDiv.innerHTML = "<h2>Stroke (Cerebrovascular Accident)</h2>";
+    outputDiv.classList.add("stroke");
+    break;
+  case "5":
+    outputDiv.innerHTML = "<h2>Spinal Cord Injury</h2>";
+    outputDiv.classList.add("spinal-cord-injury");
+    break;
+  case "0":
+    outputDiv.innerHTML = "<h2>Parkinson Disease</h2>";
+    outputDiv.classList.add("parkinson-disease");
+    break;
+  default:
+    outputDiv.innerHTML = "<h2>Parkinson Disease</h2>";
+    outputDiv.classList.add("parkinson-disease");
+}
+
+
+       
+    
+  </script>
+</body>
+</html>

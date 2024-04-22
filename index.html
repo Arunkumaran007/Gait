@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+ <link rel="stylesheet" href="index.css">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+
+
+    <title>AccelHealth</title>
+  </head>
+
+  <body>
+    <div class="title">AccelHealth</div>
+
+    <div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#test">Test</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="home" class="main-home">
+      <div class="homecontent">
+        <p>
+          At MuscleNet, we're at the forefront of leveraging cutting-edge
+          technology to revolutionize the identification and diagnosis of
+          muscular diseases. Our innovative approach harnesses the power of
+          Recurrent Neural Networks (RNN) to provide accurate and timely
+          assessments, aiding healthcare professionals in delivering swift and
+          precise treatment plans.
+        </p>
+      </div>
+      
+    </div>
+<!-- about -->
+<div class="about-main" id="about">
+    <h1 style="align-items: center; text-align: center">
+      KNOW MORE ABOUT US
+    </h1>
+    <div class="about-title">
+      <div class="about-content">
+        <h2>Introduction</h2>
+        Welcome to CodeCraft, your go-to hub for HTML/CSS templates and resources. We're here to equip developers with the tools they need to succeed.
+      </div>
+      <div class="about-content">
+        <h2>Core Belief</h2>
+        At CodeCraft, we believe in the transformative potential of code to drive innovation and progress.
+      </div>
+      <div class="about-content">
+        <h2>Approach</h2>
+        Our approach is simple: provide developers with clean, well-documented templates that streamline development.
+      </div>
+      <div class="about-content">
+        <h2>Commitment to Empower</h2>
+        We're committed to empowering developers at every level, providing support and resources to fuel their success.
+      </div>
+      <p></p>
+    </div><br><br><br><br>
+    <div class="regform mt-3">
+      <h1>Muscular Disease Prediction</h1>
+    
+        <form class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="patientName" placeholder="Patient Name">
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="patient_id">Patient ID:</label>
+            <input type="text" id="patientID" placeholder="Patient ID">
+            
+            
+            
+            <label for="height">Height:</label>
+            <input type="number" id="height" name="height" step="0.01" required>
+            
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" name="weight" step="0.01" required>
+            
+            <label for="updrs">UPDRS:</label>
+            <input type="number" id="updrs" name="updrs" required>
+            
+            <label for="updrsm">UPDRSM:</label>
+            <input type="number" id="updrsm" name="updrsm" required>
+            
+            
+            <label for="updrsm">Speed:</label>
+            <input  class="input" type="text" id="inputNumber">
+            
+        </form>
+        <button style="width: 150px; height: 60; border-radius: 15px; margin: 30px;" onclick="displayCondition()">Submit</button>    
+    </div>
+    
+
+        
+    
+    
+    
+        <!-- Contact Us -->
+
+        <div class="container" id="contact">
+            <h1 style="text-align: center">Contact Us</h1>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="360cd8ab-96ac-4e84-918c-9e020dc7172a">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+      
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+      
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+      
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <!-- Contact Us End -->
+    <footer class="footer">
+        <div class="footer-container">
+          <p>&copy; 2024 AccelHealth. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+     >
+     function displayCondition() {
+    var inputNumber = document.getElementById("inputNumber").value;
+    var patientName = document.getElementById("patientName").value;
+    var patientID = document.getElementById("patientID").value;
+
+    window.location.href = "result.html?condition=" + encodeURIComponent(inputNumber) + "&name=" + encodeURIComponent(patientName) + "&id=" + encodeURIComponent(patientID);
+}
+
+</script>
+  </body>
+</html>

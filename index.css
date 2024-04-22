@@ -1,0 +1,356 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    border: 0;
+    margin: 0;
+  }
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    form {
+        display: grid;
+        grid-gap: 10px;
+    }
+    
+    label {
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+  button.btn.btn-outline-success {
+    background: #000000;
+    border-color: #000000;
+    color: #ffffff;
+    max-width: 300px;
+}
+.regform {
+    width: 800px;
+    background-color: rgba(253, 252, 252, 0.8);
+    margin: auto;
+    color: #0f0f0f;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+.main-form {
+    width: 100%;
+    margin: auto;
+    background-color: #cccccc;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    color: #000000;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size:20px;
+    font-family: sans-serif;
+}
+.title {
+  background-color: #333333;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  font-size: 40px;
+  padding-left: 30px;
+  padding: 20px;
+}
+  .form-control {
+    padding: 20px 30px !important;
+    color: #000000;
+  }
+  .form-text {
+    color: #000000;
+  }
+  label {
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  .regform {
+    width: 800px;
+    margin: auto;
+    color: #000000;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+  }
+  button.btn.btn-outline-success {
+    background: #000000;
+    border-color: #000000;
+    color: #ffffff;
+    max-width: 200px;
+    height: 50px;
+    margin-top: 60px !important;
+  }
+
+  .main-form {
+    width: 800px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    color: #ffffff;
+  }
+
+  .form-group {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  /* Nav */
+  nav {
+    background-color: #333333;
+    padding: 20px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .title {
+    background-color: #333333;
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 40px;
+    padding-left: 30px;
+    padding: 20px;
+  }
+  .homecontent{
+      width: 1200px;
+      border: solid 1px black;
+      padding: 30px;
+      text-align: justify;
+      border-radius: 10px;
+      
+      color: rgb(238, 237, 235);
+      background-color: #ffffff45;
+  }
+  .main-home{
+      padding: 150px;
+      align-items: center ;
+      justify-content: center;
+      text-align: center;
+      background-color: #007BFF;
+      
+  }
+  /* Avout */
+  .about-main{
+  margin-top: 30px;
+}
+.about-title{
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+ 
+}
+.about-content {
+  margin-top: 30px;
+  padding: 5%;
+  background-color: rgb(2, 32, 107);
+  border: solid 1px;
+  border-radius: 30px;
+  color: white;
+  width: 300px;
+}
+.ot{
+    padding: 20px;
+    border-radius: 10px;
+    color: white; 
+    
+    
+    
+    border-radius: 20px;
+
+}
+.about-content:hover{
+  background-color: black;
+  color: aqua;
+}
+
+.about-team h1{
+  margin-top: 30px;
+  text-align: center;
+}
+.boxareateam{
+  gap: 10px;
+  display: flex;
+}
+.box-area img{
+  width: 200px;
+  height: 200px;
+}
+.box-area{
+  border: black solid 1px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+}
+
+
+.container {
+  width: 400px;
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* footer */
+
+.footer-container {
+    
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+
+.form{
+    background-color: rgba(128, 128, 128, 0.737);
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+
+}
+
+.form input{
+    width: 350px;
+}
+
+
+
+.result-container {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.muscular-dystrophy {
+    background-color: red;
+}
+
+.control-object {
+    background-color: green;
+}
+
+.osteoarthritis {
+    background-color: red;
+}
+
+.stroke {
+    background-color: red;
+}
+
+.spinal-cord-injury {
+    background-color: red;
+}
+
+.parkinson-disease {
+    background-color: red;
+}
+
